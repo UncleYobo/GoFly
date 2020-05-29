@@ -118,6 +118,7 @@
     <Compile Include="Assets\Scripts\FollowTarget.cs" />
     <Compile Include="Assets\Scripts\PilotView.cs" />
     <Compile Include="Assets\Scripts\PlaneControl.cs" />
+    <Compile Include="Assets\Scripts\PlaneCrashHandler.cs" />
     <Compile Include="Assets\Scripts\PlaneMoveEffector.cs" />
     <Compile Include="Assets\Scripts\PropellerEffect.cs" />
     <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
