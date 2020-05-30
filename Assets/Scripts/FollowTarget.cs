@@ -8,8 +8,6 @@ public class FollowTarget : MonoBehaviour
     public float smoothTime;
     public float distance, height;
 
-    private Vector3 velocity = Vector3.zero;
-
     void FixedUpdate()
     {
         Vector3 targetPos = target.TransformPoint(new Vector3(0f, height, distance));
