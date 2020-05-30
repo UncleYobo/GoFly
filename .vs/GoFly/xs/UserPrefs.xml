@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{D7098FD0-B6C1-19DA-10EF-3B61A25EA3F2}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/FollowTarget.cs">
+    <Files>
+      <File FileName="Assets/Scripts/FollowTarget.cs" Line="13" Column="15" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d93fddfc-3049-4ffe-af05-7e9eb80ee396" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

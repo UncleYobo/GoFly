@@ -10,7 +10,7 @@ public class FollowTarget : MonoBehaviour
 
     private Vector3 velocity = Vector3.zero;
 
-    void Update()
+    void FixedUpdate()
     {
         Vector3 targetPos = target.TransformPoint(new Vector3(0f, height, distance));
         transform.position = Vector3.Lerp(transform.position, targetPos, Time.deltaTime * smoothTime);
