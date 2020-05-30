@@ -122,6 +122,8 @@
     <Compile Include="Assets\Scripts\PlaneCrashHandler.cs" />
     <Compile Include="Assets\Scripts\PlaneMoveEffector.cs" />
     <Compile Include="Assets\Scripts\PropellerEffect.cs" />
+    <Compile Include="Assets\Scripts\UIController.cs" />
+    <Compile Include="Assets\Scripts\WorldLimits.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\NVJOB Water Shader SAF\Example Scenes\PostProcessing\Resources\Shaders\ScreenSpaceReflection.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

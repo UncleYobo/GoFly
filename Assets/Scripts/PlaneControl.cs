@@ -1,5 +1,4 @@
-﻿using UnityEngine.UI;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlaneControl : MonoBehaviour
 {
@@ -14,12 +13,10 @@ public class PlaneControl : MonoBehaviour
 
     Rigidbody planeRb;
     Vector3 forwardDir;
-    Text airSpeed;
 
     void Start()
     {
         planeRb = GetComponent<Rigidbody>();
-        airSpeed = GameObject.Find("Speed").GetComponent<Text>();
 
         planeRb.maxAngularVelocity = maxTurnSpeed;
     }
@@ -28,7 +25,6 @@ public class PlaneControl : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.W) && thrust < maxThrust) thrust += Time.deltaTime * acceleration;
         else if (Input.GetKey(KeyCode.S) && thrust > 0f) thrust -= Time.deltaTime * acceleration;
-        UIUpdate();
     }
 
     void FixedUpdate()
@@ -57,10 +53,5 @@ public class PlaneControl : MonoBehaviour
             planeRb.AddRelativeTorque(Vector3.right * climbSpeed * v, ForceMode.Force);
         }
         planeRb.AddRelativeTorque(Vector3.up * yawSpeed * y, ForceMode.Force);
-    }
-
-    void UIUpdate()
-    {
-        airSpeed.text = planeRb.velocity.magnitude.ToString("f2");
     }
 }

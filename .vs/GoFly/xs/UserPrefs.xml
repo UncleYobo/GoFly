@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{D7098FD0-B6C1-19DA-10EF-3B61A25EA3F2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PropellerEffect.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIController.cs">
     <Files>
-      <File FileName="Assets/Scripts/FollowTarget.cs" Line="9" Column="35" />
-      <File FileName="Assets/Scripts/PropellerEffect.cs" Line="23" Column="86" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="42" Column="30" />
+      <File FileName="Assets/Scripts/PlaneControl.cs" Line="67" Column="53" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="10" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

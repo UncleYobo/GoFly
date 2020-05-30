@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PropellerEffect : MonoBehaviour
 {
-    public float spinRate;
     public float idleSpeed, runningSpeed;
     public float transitionSpeed;
     public enum SpinAxis { X, Y, Z }
@@ -14,6 +13,7 @@ public class PropellerEffect : MonoBehaviour
     public GameObject propObj;
 
     private PlaneControl planeControl;
+    private float spinRate;
     // Start is called before the first frame update
     void Start()
     {

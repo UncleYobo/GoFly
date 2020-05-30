@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraController : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class CameraController : MonoBehaviour
     public Transform plane;
     public FollowTarget follow;
     public PilotView pilot;
+    public GameObject followUI, pilotUI;
 
     void Start()
     {
@@ -28,12 +30,16 @@ public class CameraController : MonoBehaviour
             follow.enabled = false;
             pilot.enabled = true;
             transform.SetParent(plane);
+            followUI.SetActive(false);
+            pilotUI.SetActive(true);
         }
         else
         {
             follow.enabled = true;
             pilot.enabled = false;
             transform.parent = null;
+            followUI.SetActive(true);
+            pilotUI.SetActive(false);
         }
     }
 }
