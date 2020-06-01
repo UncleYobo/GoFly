@@ -1,14 +1,15 @@
 ﻿<Properties StartupConfiguration="{D7098FD0-B6C1-19DA-10EF-3B61A25EA3F2}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIController.cs">
     <Files>
-      <File FileName="Assets/Scripts/CameraController.cs" Line="42" Column="30" />
-      <File FileName="Assets/Scripts/PlaneControl.cs" Line="67" Column="53" />
-      <File FileName="Assets/Scripts/UIController.cs" Line="10" Column="5" />
+      <File FileName="Assets/Scripts/CameraController.cs" Line="42" Column="36" />
+      <File FileName="Assets/Scripts/PlaneControl.cs" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="43" Column="64" />
+      <File FileName="Assets/Scripts/GameController.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d93fddfc-3049-4ffe-af05-7e9eb80ee396" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c25ea35b-6c87-4764-9222-ca7b434e12cd" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

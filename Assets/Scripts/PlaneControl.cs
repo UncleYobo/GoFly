@@ -10,6 +10,7 @@ public class PlaneControl : MonoBehaviour
     public float maxTurnSpeed;
     public float maxThrust;
     public float acceleration;
+    public float stallSpeed;
 
     Rigidbody planeRb;
     Vector3 forwardDir;
@@ -47,7 +48,7 @@ public class PlaneControl : MonoBehaviour
 
     void Movement(float h, float v, float y)
     {
-        if (!planeRb.useGravity)
+        if (planeRb.velocity.magnitude >= stallSpeed)
         {
             planeRb.AddRelativeTorque(Vector3.back * turnSpeed * h, ForceMode.Force);
             planeRb.AddRelativeTorque(Vector3.right * climbSpeed * v, ForceMode.Force);
