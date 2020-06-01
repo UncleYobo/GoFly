@@ -52,7 +52,7 @@ public class UIController : MonoBehaviour
         {
             currentHeading = planeObj.eulerAngles.y;
             Vector3 compassRot = new Vector3(xRotCompass, 0f, currentHeading);
-            compassRect.transform.eulerAngles = compassRot;
+            compassRect.transform.localEulerAngles = compassRot;
         }
     }
 }

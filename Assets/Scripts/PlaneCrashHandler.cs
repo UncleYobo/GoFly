@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlaneCrashHandler : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class PlaneCrashHandler : MonoBehaviour
     public float crashThreshold;
     public float velocity;
     public GameObject crashObj;
+    public GameObject cameraObj;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +30,8 @@ public class PlaneCrashHandler : MonoBehaviour
     void KillPlane()
     {
         Debug.Log("Plane Crashed");
+        Instantiate(crashObj, transform.position, Quaternion.identity);
+        Destroy(cameraObj);
+        Destroy(this.gameObject);
     }
 }
