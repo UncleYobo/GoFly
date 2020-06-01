@@ -24,7 +24,8 @@ public class PlaneCrashHandler : MonoBehaviour
 
     void OnCollisionEnter(Collision col)
     {
-        if (planeRB.velocity.magnitude >= crashThreshold) KillPlane();
+        if (col.gameObject.tag == "Respawn") KillPlane();
+        else if (planeRB.velocity.magnitude >= crashThreshold) KillPlane();
     }
 
     void KillPlane()

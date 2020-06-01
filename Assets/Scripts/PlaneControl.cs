@@ -12,6 +12,11 @@ public class PlaneControl : MonoBehaviour
     public float acceleration;
     public float stallSpeed;
 
+    float angleOfAttack;
+    float diveMultiplier;
+    float maxDiveMultiplier = 1.5f;
+    float minDiveMultiplier = 0.5f;
+
     Rigidbody planeRb;
     Vector3 forwardDir;
 
@@ -30,6 +35,7 @@ public class PlaneControl : MonoBehaviour
 
     void FixedUpdate()
     {
+        DiveCalculator();
         ApplyThrust();
 
         float h = Input.GetAxis("Horizontal");
@@ -41,7 +47,7 @@ public class PlaneControl : MonoBehaviour
     void ApplyThrust()
     {
         forwardDir = transform.TransformDirection(Vector3.forward);
-        planeRb.AddForce(forwardDir * thrust, ForceMode.Acceleration);
+        planeRb.AddForce(forwardDir * thrust * diveMultiplier, ForceMode.Acceleration);
         if (planeRb.velocity.magnitude >= takeOffSpeed) planeRb.useGravity = false;
         else planeRb.useGravity = true;
     }
@@ -54,5 +60,20 @@ public class PlaneControl : MonoBehaviour
             planeRb.AddRelativeTorque(Vector3.right * climbSpeed * v, ForceMode.Force);
         }
         planeRb.AddRelativeTorque(Vector3.up * yawSpeed * y, ForceMode.Force);
+    }
+
+    void DiveCalculator()
+    {
+        angleOfAttack = transform.eulerAngles.x;
+        if(angleOfAttack >= 10f && angleOfAttack <= 170f)
+        {
+            diveMultiplier = Mathf.MoveTowards(diveMultiplier, maxDiveMultiplier, Time.deltaTime);
+        } else if(angleOfAttack >= 225f && angleOfAttack <= 315f)
+        {
+            diveMultiplier = Mathf.MoveTowards(diveMultiplier, minDiveMultiplier, Time.deltaTime);
+        } else
+        {
+            diveMultiplier = Mathf.MoveTowards(diveMultiplier, 1f, Time.deltaTime);
+        }
     }
 }

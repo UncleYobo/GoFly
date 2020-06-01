@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{D7098FD0-B6C1-19DA-10EF-3B61A25EA3F2}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CrashMessage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlaneControl.cs">
     <Files>
       <File FileName="Assets/Scripts/GameController.cs" Line="37" Column="75" />
       <File FileName="Assets/Scripts/PilotView.cs" Line="1" Column="1" />
       <File FileName="Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" Line="11" Column="39" />
-      <File FileName="Assets/Scripts/PlaneCrashHandler.cs" Line="12" Column="33" />
-      <File FileName="Assets/Scripts/CrashMessage.cs" Line="4" Column="13" />
+      <File FileName="Assets/Scripts/PlaneCrashHandler.cs" Line="28" Column="14" />
+      <File FileName="Assets/Scripts/CrashMessage.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/PlaneControl.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
