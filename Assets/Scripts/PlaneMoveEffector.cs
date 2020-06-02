@@ -14,7 +14,7 @@ public class PlaneMoveEffector : MonoBehaviour
     Vector3 targetVecLeft = Vector3.zero;
     Vector3 targetVecRight = Vector3.zero;
     Vector3 targetVecElev = Vector3.zero;
-    Vector3 targetVecRud = Vector3.zero;
+    public Vector3 targetVecRud = Vector3.zero;
 
     // Update is called once per frame
     void Update()
